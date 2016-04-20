@@ -78,6 +78,10 @@ public class AtChatPluginTemplate extends AtChatPlugin{
 				 * Return an instance of your custom channel.
 				 * Use the information contained in the message object
 				 * to set it up.
+				 * 
+				 * The constructor should probably be made to accept and store
+				 * the sender and the message or some data derived from the
+				 * message.
 				 */
 				return new PluginTemplateChannel();
 			}
