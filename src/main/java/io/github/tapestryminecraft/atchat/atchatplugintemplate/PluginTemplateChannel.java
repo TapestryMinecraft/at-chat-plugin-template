@@ -21,7 +21,7 @@ public class PluginTemplateChannel extends AtChatChannel{
 		 * TODO
 		 * Take whatever arguments are required for an instance of the custom channel.
 		 * 
-		 * This will probably include 
+		 * This will likely be (Player sender, AtChatMessage message).
 		 */
 	}
 
@@ -43,6 +43,9 @@ public class PluginTemplateChannel extends AtChatChannel{
 		/*
 		 * TODO
 		 * Return the String to be used to identify the channel in chat.
+		 * 
+		 * For example, the default PlayerChannel returns the name of the
+		 * message recipient.
 		 */
 		return null;
 	}
@@ -51,7 +54,7 @@ public class PluginTemplateChannel extends AtChatChannel{
 	protected Player getSender() {
 		/*
 		 * TODO
-		 * Return the Player who sent the message
+		 * Return the Player who sent the message.
 		 */
 		return null;
 	}

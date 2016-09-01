@@ -11,15 +11,19 @@ import io.github.tapestryminecraft.atchat.AtChatMessage;
 import io.github.tapestryminecraft.atchat.AtChatPlugin;
 
 /*
- * TODO set your own id, name, and version
+ * TODO set your own id, name, and version, and change the class name
  */
 @Plugin(id = "at-chat-plugin-template", name = "AtChat Plugin Template", version = "0")
 public class AtChatPluginTemplate extends AtChatPlugin{
 	
 	/*
-	 * This method is called when the server is started.
-	 * Register all custom channels here, on the atChat object,
-	 * which is provided by this plugin's super class, AtChatPlugin.
+	 * This method is called automatically when the server is started.
+	 * Register an AtChatChannelController for each of your custom
+	 * channels here using the atChat object, which is provided by this
+	 * plugin's super class, AtChatPlugin.
+	 * 
+	 * In this example, the AtChatChannelController is defined as an
+	 * anonymous class.
 	 */
 	@Override
 	protected void registerChannelController() {
